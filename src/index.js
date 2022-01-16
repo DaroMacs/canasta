@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { DarkThemeProvider } from './contexts/DarkThemeContext';
+import { ToggleCardsTableContextProvider } from './contexts/ToggleCardsTableContext';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DarkThemeProvider>
+      <ToggleCardsTableContextProvider>
+          <App />
+      </ToggleCardsTableContextProvider>
+    </DarkThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
