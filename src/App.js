@@ -4,7 +4,6 @@ import './App.css'
 import Home from "./components/Home";
 import { DarkThemeContext } from "./contexts/DarkThemeContext";
 import { ToggleCardsTableContext } from "./contexts/ToggleCardsTableContext";
-import Spinner from "./components/Spinner";
 
 function App() {
 

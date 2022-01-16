@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Spinner from './Spinner';
 
 const LoginForm = ({loginAPIToken, error}) => {
 
